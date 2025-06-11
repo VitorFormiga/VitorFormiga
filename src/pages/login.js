@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 //import styles from '../css/login.css';
 //import styles from '../css/neve.css';
+import styles from '../styles/myComponent.module.scss';
 
 export default function Login() {
   return (
@@ -20,7 +21,7 @@ export default function Login() {
         <input type="text" id="username" name="username" /><br /><br />
         <label htmlFor="password">Senha:</label>
         <input type="password" id="password" name="password" /><br /><br />
-        <button type="submit">Entrar</button>
+        <button className={styles.button} type="submit">Entrar</button>
       </form>
     </div>
   );
