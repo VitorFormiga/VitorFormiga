@@ -1,6 +1,9 @@
 export default function Home() {
     return (
+	<div>
         <div>VitorFormiga</div>
-		<div>2</div>
+		<div>alalaal222</div>
+		
+		</div>
     )
 }
