@@ -37,9 +37,7 @@ export default function Home() {
                     <p>Não tem uma conta? <a href="#">Registrar</a></p>
                 </div>
             </form>
-        </section>
-        <!--script src="../../script/persistCheckbox.js"></script-->
-        <script src="../../script/rememberMe.js"></script>
+ 
     </body>
 		
 		
