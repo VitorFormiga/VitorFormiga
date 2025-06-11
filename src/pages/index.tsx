@@ -2,6 +2,8 @@
 import React from 'react';
 import Link from 'next/link'; // Importe o componente Link
 
+import styles from '../styles/home.module.css'; // Importe o módulo CSS
+
 export default function Home() {
   return (
     <div>

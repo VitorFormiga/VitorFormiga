@@ -3,8 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 
-//import styles from '../../css/login.css';
-//import styles from '../../css/neve.css';
+//import styles from '../css/login.css';
+//import styles from '../css/neve.css';
 
 export default function Login() {
   return (
