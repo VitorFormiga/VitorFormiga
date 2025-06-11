@@ -1,0 +1,19 @@
+// next.config.js
+
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  async redirects() {
+    return [
+      {
+        source: '/',          // Quando alguém acessa a rota raiz
+        destination: '/dashboard', // Redireciona para /dashboard
+        permanent: true,       // Redirecionamento permanente (código 301)
+      },
+    ];
+  },
+};
+
+module.exports = nextConfig;
+
+//Redirecionamentos permanentes (301) são bons para SEO se a mudança for definitiva. 
+//Se for temporária (por exemplo, durante uma manutenção), use permanent: false (código 302).

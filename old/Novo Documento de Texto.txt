@@ -1,0 +1,8 @@
+seu-projeto/
+├── pages/
+│   ├── index.js     <-- Esta é a sua página inicial
+│   └── login.js     <-- Esta é a sua página de login (sua-url.com/login)
+├── public/
+├── components/
+├── next.config.js
+└── package.json
