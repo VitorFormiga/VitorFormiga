@@ -2,9 +2,26 @@
 
 import React from 'react';
 
+import styles from '../../css/login.css';
+import styles from '../../css/neve.css';
+
 export default function Login() {
   return (
     <div>
+	
+	<div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+	
+	
+	
       <h1>Página de Login</h1>
       <form>
         <label htmlFor="username">Usuário:</label>

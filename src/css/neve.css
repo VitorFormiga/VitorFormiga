@@ -1,0 +1,117 @@
+/* Define um fundo escuro para os flocos se destacarem e configura o container */
+        * {
+            /*background-color: #2c3e50; /* Um azul escuro, como um céu noturno */
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Esconde os flocos que saem da tela */
+            position: relative;
+        }
+        
+        /* Estilo base para cada floco de neve */
+        .snowflake {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+            
+            /* Aplica a animação 'fall' que será definida abaixo */
+            animation-name: fall;
+            animation-timing-function: linear; /* Velocidade constante */
+            animation-iteration-count: infinite; /* Animação em loop */
+        }
+        
+        /* Keyframes definem o movimento da animação 'fall' */
+        @keyframes fall {
+            from {
+                /* Começa um pouco acima da tela */
+                transform: translateY(-10vh) rotate(0deg); 
+            }
+            to {
+                /* Termina um pouco abaixo da tela, com um leve desvio lateral e rotação */
+                transform: translateY(110vh) rotate(360deg);
+            }
+        }
+        
+        /* A MÁGICA DA VARIAÇÃO: */
+        /* Usamos :nth-child para dar a cada floco um tamanho, posição, velocidade e atraso diferentes */
+
+        .snowflake:nth-child(1) {
+            width: 8px;
+            height: 8px;
+            left: 10%; /* Posição horizontal inicial */
+            animation-duration: 12s; /* Duração da queda */
+            animation-delay: -3s; /* Atraso para começar */
+        }
+
+        .snowflake:nth-child(2) {
+            width: 5px;
+            height: 5px;
+            left: 20%;
+            animation-duration: 15s;
+            animation-delay: -8s;
+            opacity: 0.7;
+        }
+
+        .snowflake:nth-child(3) {
+            width: 10px;
+            height: 10px;
+            left: 30%;
+            animation-duration: 10s;
+            animation-delay: -2s;
+        }
+
+        .snowflake:nth-child(4) {
+            width: 6px;
+            height: 6px;
+            left: 45%;
+            animation-duration: 18s;
+            animation-delay: -5s;
+        }
+
+        .snowflake:nth-child(5) {
+            width: 4px;
+            height: 4px;
+            left: 55%;
+            animation-duration: 20s;
+            animation-delay: 0s;
+        }
+        
+        .snowflake:nth-child(6) {
+            width: 12px;
+            height: 12px;
+            left: 65%;
+            animation-duration: 9s;
+            animation-delay: -1s;
+        }
+
+        .snowflake:nth-child(7) {
+            width: 7px;
+            height: 7px;
+            left: 80%;
+            animation-duration: 14s;
+            animation-delay: -7s;
+        }
+
+        .snowflake:nth-child(8) {
+            width: 5px;
+            height: 5px;
+            left: 90%;
+            animation-duration: 16s;
+            animation-delay: -4s;
+        }
+
+        .snowflake:nth-child(9) {
+            width: 9px;
+            height: 9px;
+            left: 5%;
+            animation-duration: 11s;
+            animation-delay: -9s;
+        }
+
+        .snowflake:nth-child(10) {
+            width: 6px;
+            height: 6px;
+            left: 95%;
+            animation-duration: 17s;
+            animation-delay: -6s;
+        }
